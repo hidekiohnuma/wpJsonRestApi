@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BlogViewController.h"
 
 @interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
@@ -16,7 +17,7 @@
 
 //StoryBoardと紐付けたUITableView
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property NSString *blogName;
 
 @end
 

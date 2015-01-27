@@ -12,20 +12,24 @@
 	<dict>
 		<key>3606FB6571479D9F746B37DE2060028088E7576D</key>
 		<string>https://github.com/hidekiohnuma/test.git</string>
+		<key>8FE9363DBF17774B4B9B07A386EBBA64A5037623</key>
+		<string>https://github.com/hidekiohnuma/wpJsonRestApi.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>wpTest/wpTest.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>3606FB6571479D9F746B37DE2060028088E7576D</key>
+		<string>../../../../local_test</string>
+		<key>8FE9363DBF17774B4B9B07A386EBBA64A5037623</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/hidekiohnuma/test.git</string>
+	<string>https://github.com/hidekiohnuma/wpJsonRestApi.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>3606FB6571479D9F746B37DE2060028088E7576D</string>
+	<string>8FE9363DBF17774B4B9B07A386EBBA64A5037623</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>3606FB6571479D9F746B37DE2060028088E7576D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>local_test</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8FE9363DBF17774B4B9B07A386EBBA64A5037623</string>
+			<key>IDESourceControlWCCName</key>
+			<string>wpJsonRestApi</string>
 		</dict>
 	</array>
 </dict>

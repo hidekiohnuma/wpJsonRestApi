@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    NSString* selectedItem;
+}
 
 @end
 
@@ -71,9 +73,27 @@
     
     NSDictionary *item = [self.items objectAtIndex:indexPath.row];
     
+    // blog title
     cell.textLabel.text = [item objectForKey:@"title"];
+    // blog content
+//    cell.textLabel.text = [item objectForKey:@"content"];
     
     return cell;
+}
+// tap action
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSDictionary *item = [self.items objectAtIndex:indexPath.row];
+    selectedItem = [item objectForKey:@"link"];
+    // toBlogViewController
+    [self performSegueWithIdentifier:@"toBlogViewController" sender:self];
+
+}
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if([[segue identifier] isEqualToString:@"toBlogViewController"]){
+        ViewController *vc = (ViewController*)[segue destinationViewController];
+        vc.blogName = selectedItem;
+    }
 }
 
 

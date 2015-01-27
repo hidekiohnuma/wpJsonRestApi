@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F1CAA0A1A7763890001B4BB /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CAA091A7763890001B4BB /* BlogViewController.m */; };
 		1F5CAB6D1A75DA4900D86DCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB6C1A75DA4900D86DCC /* main.m */; };
 		1F5CAB701A75DA4900D86DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB6F1A75DA4900D86DCC /* AppDelegate.m */; };
 		1F5CAB731A75DA4900D86DCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB721A75DA4900D86DCC /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F1CAA081A7763680001B4BB /* BlogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlogViewController.h; sourceTree = "<group>"; };
+		1F1CAA091A7763890001B4BB /* BlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogViewController.m; sourceTree = "<group>"; };
 		1F5CAB671A75DA4900D86DCC /* wpTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wpTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F5CAB6B1A75DA4900D86DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F5CAB6C1A75DA4900D86DCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				1F5CAB711A75DA4900D86DCC /* ViewController.h */,
 				1F5CAB721A75DA4900D86DCC /* ViewController.m */,
 				1F5CAB741A75DA4900D86DCC /* Main.storyboard */,
+				1F1CAA081A7763680001B4BB /* BlogViewController.h */,
+				1F1CAA091A7763890001B4BB /* BlogViewController.m */,
 				1F5CAB771A75DA4900D86DCC /* Images.xcassets */,
 				1F5CAB791A75DA4900D86DCC /* LaunchScreen.xib */,
 				1F5CAB6A1A75DA4900D86DCC /* Supporting Files */,
@@ -168,6 +173,7 @@
 				TargetAttributes = {
 					1F5CAB661A75DA4900D86DCC = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = UB7A24V9W8;
 					};
 					1F5CAB7F1A75DA4A00D86DCC = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -221,6 +227,7 @@
 			files = (
 				1F5CAB731A75DA4900D86DCC /* ViewController.m in Sources */,
 				1F5CAB701A75DA4900D86DCC /* AppDelegate.m in Sources */,
+				1F1CAA0A1A7763890001B4BB /* BlogViewController.m in Sources */,
 				1F5CAB6D1A75DA4900D86DCC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wpTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +362,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = wpTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +421,7 @@
 				1F5CAB8C1A75DA4A00D86DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5CAB8D1A75DA4A00D86DCC /* Build configuration list for PBXNativeTarget "wpTestTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +430,7 @@
 				1F5CAB8F1A75DA4A00D86DCC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
