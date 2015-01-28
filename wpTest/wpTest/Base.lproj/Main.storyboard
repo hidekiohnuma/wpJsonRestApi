@@ -52,14 +52,14 @@
                                 <rect key="frame" x="-1" y="37" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <outlet property="delegate" destination="EGD-Xw-81y" id="pPn-ex-cYV"/>
+                                    <outlet property="delegate" destination="VMs-SB-C4c" id="oet-x6-rfR"/>
                                 </connections>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="ffR-Db-IRr" id="RAe-I2-rhK"/>
+                        <outlet property="webView" destination="ffR-Db-IRr" id="6Wz-x3-j5s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgI-R6-4ti" userLabel="First Responder" sceneMemberID="firstResponder"/>

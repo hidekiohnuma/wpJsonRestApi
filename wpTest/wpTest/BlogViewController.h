@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlogViewController : UIViewController
+@interface BlogViewController : UIViewController<UIWebViewDelegate>
 
 @property NSString *blogName;
-@property (nonatomic, weak) IBOutlet UIWebView *webView;
+@property (nonatomic, strong) IBOutlet UIWebView *webView;
 
 @end

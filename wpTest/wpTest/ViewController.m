@@ -35,10 +35,8 @@
 
 - (void)getJSON
 {
-    
-//    NSURL *url = [NSURL URLWithString:@"http://chie-lab.main.jp/wp/wp-json/posts"];
-    NSURL *url = [NSURL URLWithString:@"http://blog.aruto.me/wp-json/posts"];
-    
+    // url取得
+    NSURL *url = [NSURL URLWithString:@"http://blog.aruto.me/wp-json/posts/?filter[posts_per_page]=20&filter[orderby]=date&filter[order]=DESC"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
@@ -47,7 +45,6 @@
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
         
         // アプリデータの配列をプロパティに保持
-        //NSArray * values = [jsonDictionary allValues];
         self.items = jsonDictionary;
         
         // TableView をリロード
@@ -72,11 +69,9 @@
     }
     
     NSDictionary *item = [self.items objectAtIndex:indexPath.row];
-    
-    // blog title
+//    NSLog(@"%@",item);
+    // blog記事取得 title
     cell.textLabel.text = [item objectForKey:@"title"];
-    // blog content
-//    cell.textLabel.text = [item objectForKey:@"content"];
     
     return cell;
 }
