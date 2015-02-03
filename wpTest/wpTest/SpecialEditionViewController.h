@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "BlogViewController.h"
 
-@interface ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+@interface SpecialEditionViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 //テーブルの一覧にセットする配列
 @property NSArray* items;

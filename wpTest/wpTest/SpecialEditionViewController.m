@@ -6,15 +6,15 @@
 //  Copyright (c) 2015年 大沼英喜. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "SpecialEditionViewController.h"
 
-@interface ViewController (){
+@interface SpecialEditionViewController (){
     NSString* selectedItem;
 }
 
 @end
 
-@implementation ViewController
+@implementation SpecialEditionViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -86,7 +86,7 @@
 }
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if([[segue identifier] isEqualToString:@"toBlogViewController"]){
-        ViewController *vc = (ViewController*)[segue destinationViewController];
+        SpecialEditionViewController *vc = (SpecialEditionViewController*)[segue destinationViewController];
         vc.blogName = selectedItem;
     }
 }

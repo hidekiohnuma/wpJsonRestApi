@@ -10,7 +10,7 @@
 		1F1CAA0A1A7763890001B4BB /* BlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1CAA091A7763890001B4BB /* BlogViewController.m */; };
 		1F5CAB6D1A75DA4900D86DCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB6C1A75DA4900D86DCC /* main.m */; };
 		1F5CAB701A75DA4900D86DCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB6F1A75DA4900D86DCC /* AppDelegate.m */; };
-		1F5CAB731A75DA4900D86DCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB721A75DA4900D86DCC /* ViewController.m */; };
+		1F5CAB731A75DA4900D86DCC /* SpecialEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5CAB721A75DA4900D86DCC /* SpecialEditionViewController.m */; };
 		1F5CAB761A75DA4900D86DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F5CAB741A75DA4900D86DCC /* Main.storyboard */; };
 		1F5CAB781A75DA4900D86DCC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F5CAB771A75DA4900D86DCC /* Images.xcassets */; };
 		1F5CAB7B1A75DA4900D86DCC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F5CAB791A75DA4900D86DCC /* LaunchScreen.xib */; };
@@ -35,8 +35,8 @@
 		1F5CAB6C1A75DA4900D86DCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1F5CAB6E1A75DA4900D86DCC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1F5CAB6F1A75DA4900D86DCC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1F5CAB711A75DA4900D86DCC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1F5CAB721A75DA4900D86DCC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F5CAB711A75DA4900D86DCC /* SpecialEditionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpecialEditionViewController.h; sourceTree = "<group>"; };
+		1F5CAB721A75DA4900D86DCC /* SpecialEditionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpecialEditionViewController.m; sourceTree = "<group>"; };
 		1F5CAB751A75DA4900D86DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F5CAB771A75DA4900D86DCC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F5CAB7A1A75DA4900D86DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -86,8 +86,8 @@
 			children = (
 				1F5CAB6E1A75DA4900D86DCC /* AppDelegate.h */,
 				1F5CAB6F1A75DA4900D86DCC /* AppDelegate.m */,
-				1F5CAB711A75DA4900D86DCC /* ViewController.h */,
-				1F5CAB721A75DA4900D86DCC /* ViewController.m */,
+				1F5CAB711A75DA4900D86DCC /* SpecialEditionViewController.h */,
+				1F5CAB721A75DA4900D86DCC /* SpecialEditionViewController.m */,
 				1F5CAB741A75DA4900D86DCC /* Main.storyboard */,
 				1F1CAA081A7763680001B4BB /* BlogViewController.h */,
 				1F1CAA091A7763890001B4BB /* BlogViewController.m */,
@@ -225,7 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F5CAB731A75DA4900D86DCC /* ViewController.m in Sources */,
+				1F5CAB731A75DA4900D86DCC /* SpecialEditionViewController.m in Sources */,
 				1F5CAB701A75DA4900D86DCC /* AppDelegate.m in Sources */,
 				1F1CAA0A1A7763890001B4BB /* BlogViewController.m in Sources */,
 				1F5CAB6D1A75DA4900D86DCC /* main.m in Sources */,
