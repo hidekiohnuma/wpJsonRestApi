@@ -28,6 +28,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="tableView" destination="uF6-tl-hUp" id="VAf-mF-pv0"/>
                         <segue destination="VMs-SB-C4c" kind="modal" identifier="toBlogViewController" modalTransitionStyle="crossDissolve" id="gTO-Sw-CkP"/>
@@ -59,6 +62,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="webView" destination="ffR-Db-IRr" id="6Wz-x3-j5s"/>
                     </connections>
