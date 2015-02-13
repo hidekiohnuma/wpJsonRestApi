@@ -36,17 +36,19 @@
 - (void)getJSON
 {
     // url取得
-    NSURL *url = [NSURL URLWithString:@"http://blog.aruto.me/wp-json/posts/?filter[posts_per_page]=20&filter[orderby]=date&filter[order]=DESC"];
+//    NSURL *url = [NSURL URLWithString:@"http://blog.aruto.me/wp-json/posts/?filter[posts_per_page]=20&filter[orderby]=date&filter[order]=DESC"];
+    //http://www-stg.aruto.me/api/blog/list/
+    NSURL *url = [NSURL URLWithString:@"http://www-stg.aruto.me/api/blog/list/"];
     
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error) {
         
         NSDictionary *jsonDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-        
+
         // アプリデータの配列をプロパティに保持
-        self.items = jsonDictionary;
-        
+        self.items = [jsonDictionary objectForKey:@"Blogs"];
+
         // TableView をリロード
         [self.tableView reloadData];
     }];
@@ -69,17 +71,19 @@
     }
     
     NSDictionary *item = [self.items objectAtIndex:indexPath.row];
-//    NSLog(@"%@",item);
+
     // blog記事取得 title
-    cell.textLabel.text = [item objectForKey:@"title"];
-    
+//    cell.textLabel.text = [[item objectForKey:@"im:name"] objectForKey:@"label"];
+    cell.textLabel.text = [[item objectForKey:@"Blog"] objectForKey:@"post_title"];
+//    cell.textLabel.text = [[item objectForKey:@"Blog"] objectForKey:@"shop_id"];
+    NSLog(@"%@",[[item objectForKey:@"Blog"] objectForKey:@"shop_id"]);
     return cell;
 }
 // tap action
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSDictionary *item = [self.items objectAtIndex:indexPath.row];
-    selectedItem = [item objectForKey:@"link"];
+    selectedItem = [[item objectForKey:@"Blog"] objectForKey:@"post_url"];
     // toBlogViewController
     [self performSegueWithIdentifier:@"toBlogViewController" sender:self];
 
